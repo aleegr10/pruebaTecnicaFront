@@ -1,0 +1,566 @@
+body {
+    color: white;
+    background-color: #26335D;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+}
+
+button:hover{
+    box-shadow: 1px 1px 20px #000000;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+#brandName {
+    font-size: 30px;
+}
+#menuButton {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#navs {
+    margin-left: 41px;
+}
+ul {
+    display: inline;
+}
+li {
+    display: inline;
+}
+.liNav {
+    font-size: 15px;
+    margin-right: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#logins {
+    text-align: right;
+    margin-left: 50px;
+}
+
+#login {
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+#loginPopup {
+    display: none;
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    z-index: 1000;
+    text-align: center;
+}
+#loginPopup input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#loginPopup input.error {
+    border-color: red;
+}
+#loginErrorMessage {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+.join {
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #8D5CF6;
+    cursor: pointer;
+}
+#joinPopup {
+    display: none;
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    z-index: 1000;
+    text-align: center;
+}
+#joinPopup input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#joinPopup input.error {
+    border-color: red;
+}
+#joinErrorMessage {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+#containerHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 682px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.columnHeader {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 180%;
+    width: 100%;
+    max-height: 682px;
+}
+.columnHeader img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+.columnHeader button {
+    margin-right: 5px; 
+}
+.learnMore {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #8D5CF6;
+    cursor: pointer;
+}
+#learnMorePopup {
+    display: none;
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(107, 107, 107);
+    z-index: 1000;
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.morado {
+    color: #8D5CF6;
+}
+
+.tittle{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#section1 h1 {
+    font-size: 200%;
+}
+#containerSection1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+.contentSection1 {
+    color: black;
+    background-color: white;
+    width: 45%;
+    max-width: 328px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.contentSection1:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px black;
+}
+.contentSection1 img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.contentSection1 hr, .columnSection2 hr {
+    width: 20%;
+    border: 2px solid #E74040;
+    margin: 10px 0;
+}
+
+#section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 682px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.columnSection2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    max-height: 682px;
+}
+.columnSection2 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.columnSection2 h1{
+    font-size: 200%;
+}
+.columnSection2 button {
+    margin-right: 5px; 
+    border: none;
+    color: #8D5CF6;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#containerSection3 {
+    display: flex;
+    justify-content: center;
+}
+.contentSection3 {
+    flex: 0 0 30%;
+    margin: 10px;
+    background-color: white;
+}
+.contentSection3 > div:first-child {
+    position: relative;
+}
+.contentSection3 > div:last-child {
+    color: black;
+    text-align: left;
+    padding-bottom: 100px;
+    padding: 20px;
+}
+.contentSection3 p.sale {
+    position: absolute;
+    font-size: 12px;
+    left: 10px;
+    background-color: #E74040;
+    padding: 3px;
+    border-radius: 5px;
+}
+.contentSection3 img {
+    width: 100%;
+}
+.buttonContainerSection3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 0px;
+    background-color: transparent;
+}
+.buttonContainerSection3 button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.contentSection3 .sales {
+    display: flex;
+    align-items: center;
+}
+.contentSection3 .sales img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.contentSection3 .price {
+    display: flex;
+    justify-content: left;
+}
+.contentSection3 .price p:first-of-type {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+.contentSection3 .price p:last-of-type {
+    color: red;
+    font-weight: bold;
+}
+.moreButton {
+    color: #8D5CF6;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #8D5CF6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.carousel {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+.carousel-item {
+    flex: 0 0 calc(50% - 30px);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    min-width: calc(50% - 20px);
+}
+.carousel-item:first-of-type{
+    margin-left: 10px;
+}
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.carousel-item p {
+    color: black;
+}
+.carousel-item .stars {
+    font-size: 25px;
+    color: #F3CD03;
+}
+.carousel-control {
+    cursor: pointer;
+}
+
+#containerSection5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+}
+.contentSection5{
+    color: black;
+    background-color: white;
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: left;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.contentSection5:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px black;
+}
+.contentSection5 p:first-of-type:before {
+    content: '>';
+    position: absolute;
+    left: 10px;
+}
+.contentSection5 p {
+    margin-left: 20px;
+    margin: 0;
+}
+
+#suscribeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#suscribeEmail {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 60%;
+    height: 45px;
+    margin-right: -4px;
+    padding: 0 10px;
+    border: none;
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+}
+#suscribeEmail.error {
+    border: 3px solid red;
+}
+#suscribeButton {
+    color: white;
+    background-color: #8D5CF6;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 15%;
+    height: 45px;
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px;
+}
+#suscribeEmail:focus,
+#suscribeButton:focus {
+    outline: none;
+}
+#suscribePopup {
+    display: none;
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(107, 107, 107);
+    z-index: 1000;
+}
+
+#footer{
+    justify-content: center;
+}
+#containerFooter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align-last: left;
+    color: black;
+    background-color: white;
+}
+#containerFooter div {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#containerFooter div p + p {
+    margin-top: 20px;
+}
+#containerFooter div:last-child div{
+    padding: 0;
+}
+#containerFooter div:last-child div p,img{
+    display: inline;
+    align-items: center;
+    gap: 10px;
+}
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: rgb(250, 250, 250);
+}
+#contact p {
+    margin: 0;
+}
+#social {
+    display: flex;
+    float: right;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+
+@media (max-width: 1150px) {
+    #menuButton {
+        display: block;
+    }
+    #menuContent {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 32%;
+    }
+    #menuContent ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    #menuContent li {
+        margin: 10px 10px;
+    }
+    
+    #menuContent.visible {
+        display: block;
+    }
+    #menuContent.hidden {
+        display: none;
+    }
+}

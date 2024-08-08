@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandName</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul id="brandName">
+            <li><a href="/page.html">BrandName</a></li>
+        </ul>
+
+        <button id="menuButton" onclick="toggleMenu()">☰</button>
+
+        <div id="menuContent">
+            <ul id="navs">
+                <li class="liNav"><a href="/page.html">Home</a></li>
+                <li class="liNav"><a href="/pages/product.html">Product</a></li>
+                <li class="liNav"><a href="/pages/pricing.html">Pricing</a></li>
+                <li class="liNav"><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="logins">
+            <ul>
+                <li><button id="login">Login</button></li>
+                <li><button class="join">JOIN US →</button></li>
+            </ul>
+
+            <div id="loginPopup">
+                <h2>Login</h2>
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button id="submitLogin">Login</button>
+                <span id="loginErrorMessage"></span>
+            </div>
+        
+            <script src="components/login.js"></script>
+
+            <div id="joinPopup">
+                <h2>Join Us</h2>
+                <input type="text" id="joinName" placeholder="Name">
+                <input type="email" id="joinEmail" placeholder="Email">
+                <input type="password" id="joinPassword" placeholder="Password">
+                <button id="submitJoin">Join</button>
+                <span id="joinErrorMessage"></span>
+            </div>
+            <script src="components/join.js"></script>
+        </div>
+    </nav>
+    <script src="components/toggleMenu.js"></script>
+    
+    <header>
+        <div id="containerHeader">
+            <div class="columnHeader">
+                <h1>25K+ STUDENTS TRUST US</h1>
+                <p>Every day bring with it a fresh set of learning possibilities</p>
+
+                <div id="buttonContainer">
+                    <button class="join" class="join">Join Us</button>
+                    <button class="learnMore">Learn More</button>
+
+                    <div id="learnMorePopup">We have sent you an email so that you can read more</div>
+                    <script src="components/learnMore.js"></script>
+                </div>
+            </div>
+
+            <div class="columnHeader">
+                <img src="images/img1.png" alt="imgHeader">
+            </div>
+        </div>
+    </header>
+
+    <section id="section1">
+        <div class="tittle">
+            <p class="morado">Practice Advice</p>
+            <h1>Most Popular Courses</h1>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+
+        <div id="containerSection1">
+            <div class="contentSection1">
+                <img src="images/iconos/edificio.png" alt="icono1">
+                <p><strong>Expert intruction</strong></p>
+                <hr/>
+                <p>The grwadual accumulation and small-scale...</p>
+            </div>
+
+            <div class="contentSection1">
+                <img src="images/iconos/cerebro.png" alt="icono2">
+                <p><strong>2,769 online courses</strong></p>
+                <hr/>
+                <p>The grwadual accumulation and small-scale...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="columnSection2">
+            <img src="images/img2.png" alt="img2">
+        </div>
+
+        <div class="columnSection2">
+            <hr>
+            <h1>Our Popular Courses</h1>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+            <button class="learnMore">Learn More ></button>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="tittle">
+            <p class="morado">Practice Advice</p>
+            <h1>Approdable Packages</h1>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+
+        <div id="containerSection3">
+            <div class="contentSection3">
+                <div>
+                    <p class="sale">Sale</p>
+                    <img src="images/img3.jpeg" alt="img3">
+                    <div class="buttonContainerSection3">
+                        <button><img src="images/iconos/corazon.png" alt="buttonLike"></button>
+                        <button><img src="images/iconos/carrito.png" alt="buttonLike"></button>
+                        <button><img src="images/iconos/ojo.png" alt="buttonLike"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="morado">Welcome</p>
+                    <p><strong>Training Courses</strong></p>
+                    <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                    <div class="sales">
+                        <img src="images/iconos/download.png" alt="download" width="15px">
+                        <p>15 sales</p>
+                    </div>
+
+                    <div class="price">
+                        <p>$16.48</p>
+                        <p>$6.48</p>
+                    </div>
+                    <button class="learnMore moreButton">Learn More</button>
+                </div>
+            </div>
+
+            <div class="contentSection3">
+                <div>
+                    <p class="sale">Sale</p>
+                    <img src="images/img4.jpeg" alt="img4">
+                    <div class="buttonContainerSection3">
+                        <button><img src="images/iconos/corazon.png" alt="buttonLike"></button>
+                        <button><img src="images/iconos/carrito.png" alt="buttonLike"></button>
+                        <button><img src="images/iconos/ojo.png" alt="buttonLike"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="morado">Welcome</p>
+                    <p><strong>Lifetime Access</strong></p>
+                    <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                    <div class="sales">
+                        <img src="images/iconos/download.png" alt="download" width="15px">
+                        <p>15 sales</p>
+                    </div>
+                    <div class="price">
+                        <p>$16.48</p>
+                        <p>$6.48</p>
+                    </div>
+                    <button class="learnMore moreButton">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div>
+            <p class="morado">Practice Advice</p>
+            <h1>Most Popular Courses</h1>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+
+        <div class="divsSection4">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="images/img5.jpeg" alt="img5">
+                        <p>State helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        <div class="stars">★★★★★</div>
+                        <p><strong>Regina Miles</strong></p>
+                        <p>Designer</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/img6.jpeg" alt="img6">
+                        <p>State helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        <div class="stars">★★★★★</div>
+                        <p><strong>Regina Miles</strong></p>
+                        <p>Designer</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/img7.jpeg" alt="img7">
+                        <p>State helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        <div class="stars">★★★★★</div>
+                        <p><strong>Regina Miles</strong></p>
+                        <p>Designer</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/img8.jpeg" alt="img8">
+                        <p>State helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        <div class="stars">★★★★★</div>
+                        <p><strong>Regina Miles</strong></p>
+                        <p>Designer</p>
+                    </div>
+                </div>
+
+                <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+                <button class="carousel-control next" onclick="nextSlide()">❯</button>      
+            </div>  
+            <script src="components/carousel.js"></script>
+        </div>
+    </section>
+
+    <section id="section5">
+        <div>
+            <div>
+                <h1>FAQ</h1>
+                <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+            </div>
+
+            <div id="containerSection5"></div>
+
+            <script src="components/generateContent.js"></script>
+            <script>
+                generateContent(9);
+            </script>
+        </div>
+    </section>
+
+    <section id="section6">
+        <div>
+            <div>
+                <p class="morado">Newsletter</p>
+                <h1>Get Quality Education</h1>
+                <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+            </div>
+
+            <div id="suscribeContainer">
+                <input type="email" name="suscribe" id="suscribeEmail" placeholder="Your Email">
+                <button id="suscribeButton">Suscribe</button>
+            </div>
+
+            <div id="suscribePopup">Congratulations!! You have successfully subscribed</div>
+            <script src="components/suscribe.js"></script>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div id="containerFooter">
+            <div>
+                <p><strong>Company info</strong></p>
+                <p>About Us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <p><strong>Legal</strong></p>
+                <p>About Us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <p><strong>Features</strong></p>
+                <p>Business Marketing</p>
+                <p>User Analytic</p>
+                <p>Unlimited Support</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <p><strong>Resources</strong></p>
+                <p>IOS & Android</p>
+                <p>Watch a demo</p>
+                <p>Customers</p>
+                <p>API</p>
+            </div>
+
+            <div>
+                <p><strong>Get in Touch</strong></p><br>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="tel"><p>(480) 555-0103</p><br>
+                </div>
+
+                <div>
+                    <img src="images/iconos/maps.png" alt="ubi"><p>4517 Washington Ave. Manchester, Kent</p><br>
+                </div>
+
+                <div>
+                    <img src="images/iconos/gmail.png" alt="gmail"><p>debra.holt@example.com</p></div>
+                </div>
+        </div>
+        
+        <div id="contact">
+            <p>Made With Love By Figmaland All Right Reserved</p>
+            <div id="social">
+                <img src="images/iconos/facebook.png" alt="fcbk">
+                <img src="images/iconos/instagram.png" alt="insta">
+                <img src="images/iconos/twitter.png" alt="twtt">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
