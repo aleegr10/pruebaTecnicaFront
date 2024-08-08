@@ -38,8 +38,6 @@ Este proyecto es una página web interactiva que presenta un diseño moderno y u
    git clone https://github.com/tu-usuario/tu-repositorio.git
    ```
 
-````
-
 2. **Navegar al Directorio del Proyecto**
 
    ```bash
@@ -82,4 +80,3 @@ Este proyecto fue desarrollado por [Alejandro](https://github.com/aleegr10).
 
 Asegúrate de reemplazar los enlaces y nombres de usuario según sea necesario para que reflejen tu propio repositorio y detalles. ¡Espero que esto te sea útil!
 ```
-````
